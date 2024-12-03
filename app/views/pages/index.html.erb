@@ -1,0 +1,7 @@
+<ul><% @products.each do |product| %>
+  <h3><%= product.name %></h3>
+  <li><%= product.price %></li>
+<% end %></ul>
+
+<%= button_to "Logout", destroy_user_session_path, method: :delete %>
+
